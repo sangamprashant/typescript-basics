@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
+type ContainerProps = {
+  styles: React.CSSProperties;
+};
 
-const Container = () => {
-  return (
-    <div>Container</div>
-  )
-}
+const Container = (props: ContainerProps) => {
+  return <div style={props.styles}>Container</div>;
+};
 
-export default Container
+export default Container;
